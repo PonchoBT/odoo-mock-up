@@ -42,7 +42,7 @@ Responsive landing page implementation based on a visual reference, focused on c
 - SCSS compilation verified without errors (`build:css` and `watch:css` ready).
 
 ## Notes
-- To match spacing and proportions with the original design (Figma), use browser extensions like **Grid Ruler** and **Grid System** during visual QA.
+- Use browser extensions like **Grid Ruler** and **Grid System** during visual QA.
 
 ## Demo
 [View the project on Amplify](https://main.d1xt5cw0ce36qa.amplifyapp.com/)
