@@ -12218,6 +12218,7 @@ img {
   padding: 18px 18px 24px;
   box-shadow: var(--shadow-header-card);
   padding: 15px;
+  border: none;
 }
 .header-card::after {
   content: "";
