@@ -8,14 +8,16 @@ Responsive landing page implementation based on a visual reference, focused on c
 - SCSS (Sass)
 - Bootstrap 5 (CDN) + Bootstrap Icons
 
-## How to Run
+## Installation
 1. Install dependencies:
    `npm install`
-2. Build styles (one time):
+
+## Build
+1. Compile styles once:
    `npm run build:css`
-3. Or run Sass in watch mode:
+2. Or run Sass in watch mode:
    `npm run watch:css`
-4. Open `index.html` in the browser.
+3. Open `index.html` in the browser.
 
 ## What Was Delivered
 - Responsive hero, feature blocks, awards, FAQ, and footer sections.
@@ -41,6 +43,9 @@ Responsive landing page implementation based on a visual reference, focused on c
 
 ## Notes
 - To match spacing and proportions with the original design (Figma), use browser extensions like **Grid Ruler** and **Grid System** during visual QA.
+
+## Demo
+[View the project on Amplify](https://main.d1xt5cw0ce36qa.amplifyapp.com/)
 
 ## Author
 - Poncho, Dev
