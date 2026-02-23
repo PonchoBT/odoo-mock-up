@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odoo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <header class="header-main" id="home">
+    <div class="container">
+      <nav class="top-nav navbar navbar-expand-lg" aria-label="Main navigation">
+        <a class="brand navbar-brand" href="#" aria-label="Odoo home">
+          <img src="assets/images/company-logos/white/odoo-white.svg" alt="Odoo" />
+        </a>
+        <button class="navbar-toggler top-nav__toggle" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse top-nav__collapse" id="mainNav">
+          <ul class="navbar-nav top-nav__menu ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">App</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Docs</a></li>
+          </ul>
+          <div class="top-nav__actions">
+            <a class="top-nav__signin" href="#">Sign in</a>
+            <a class="app-btn app-btn--light top-nav__buy" href="#">
+              <i class="bi bi-bag" aria-hidden="true"></i>
+              <span>Buy now</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-main__content row g-4 align-items-center">
+        <div class="header-main__copy col-12 col-sm-12 col-md-12 col-lg-4 col-xxl-7">
+          <h1 class="header-main__title">Development done right</h1>
+          <p class="header-main__description">
+            Build a beautiful, modern website with flexible components built
+            from scratch.
+          </p>
+          <div class="header-main__actions">
+            <button class="app-btn app-btn--light header-main__cta" type="button">
+              <span>Get started</span>
+              <i class="bi bi-plus-lg" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="header-main__trusted-row">
+            <p class="header-main__trusted">Trusted by:</p>
+            <div class="header-main__logos">
+              <img src="assets/images/company-logos/white/google-white.svg" alt="Google" />
+              <img src="assets/images/company-logos/white/spotify-white.svg" alt="Spotify" />
+              <img src="assets/images/company-logos/white/airbnb-white.svg" alt="Airbnb" />
+              <img src="assets/images/company-logos/white/paypal-white.svg" alt="PayPal" />
+            </div>
+          </div>
+        </div>
+        <div class="header-card card col-12 col-sm-12 col-md-12 col-lg-6 col-xxl-5">
+          <div class="header-card__top">
+            <p class="header-card__heading">Manage cards</p>
+            <button class="header-card__action" type="button">Add new</button>
+          </div>
+
+          <div class="credit-card">
+            <div class="credit-card__chips">
+              <span class="credit-card__chip credit-card__chip--red"></span>
+              <span class="credit-card__chip credit-card__chip--yellow"></span>
+            </div>
+            <span class="credit-card__status">Active</span>
+            <p class="credit-card__label">CARD NUMBER</p>
+            <p class="credit-card__number">4358 - 7421 - 9256 - 6682</p>
+            <div class="credit-card__meta">
+              <div>
+                <p class="credit-card__label">NAME</p>
+                <p class="credit-card__value">John Snow</p>
+              </div>
+              <div>
+                <p class="credit-card__label">EXPIRY DATE</p>
+                <p class="credit-card__value">11/23</p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="header-card__transactions">
+            <li>
+              <div>
+                <p class="header-card__merchant">Starbucks</p>
+                <p class="header-card__detail">
+                  Pending - San Francisco, United States
+                </p>
+              </div>
+              <span class="header-card__amount">$5,50 USD</span>
+            </li>
+            <li>
+              <div>
+                <p class="header-card__merchant">Nike Sports</p>
+                <p class="header-card__detail">Pending - Lisbon, Portugal</p>
+              </div>
+              <span class="header-card__amount">$129,00 USD</span>
+            </li>
+          </ul>
+          <a class="header-card__view-all" href="#">
+            <span>View all</span>
+            <i class="bi bi-chevron-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-video" id="features">
+      <div class="container">
+        <div class="tools row g-4 align-items-center">
+          <div class="feature__media tools__media col-12 col-lg-7">
+            <div class="project-card card">
+              <h3>Awesome projects</h3>
+              <ul class="project-card__list">
+                <li>
+                  <div class="project-card__row">
+                    <span>Create the new logo</span>
+                    <span class="project-card__meta-end">
+                      <span class="project-card__meta-end-time">3:50</span>
+                      <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="project-card__track">
+                    <div class="project-card__fill project-card__fill--36"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="project-card__row">
+                    <span>Set up the color palette</span>
+                    <span class="project-card__meta-end">
+                      <span class="project-card__meta-end-time">4:00</span>
+                      <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="project-card__track">
+                    <div class="project-card__fill project-card__fill--60"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="project-card__row">
+                    <span>Wireframe and prototype</span>
+                    <span class="project-card__meta-end">
+                      <span class="project-card__meta-end-time">6:50</span>
+                      <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="project-card__track">
+                    <div class="project-card__fill project-card__fill--80"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <figure class="project-photo">
+              <img src="assets/images/img_01.jpg" alt="Team planning" />
+              <button class="project-photo__btn" type="button">
+                Play video <i class="bi bi-play" aria-hidden="true"></i>
+              </button>
+            </figure>
+          </div>
+          <div class="tools__content col-12 col-lg-5">
+            <p class="tag tag--tools">Tools</p>
+            <h2>We build for designers and developers</h2>
+            <p class="feature__lead">
+              Get components and examples, including tons of variables that
+              will help you grow your business.
+            </p>
+          </div>
+        </div>
+
+        <div class="features row g-4 align-items-center">
+          <div class="feature__content--checklist col-12 col-lg-6">
+            <p class="tag tag--green">Features</p>
+            <h2>
+              Get components and examples, including tons of variables that
+              will help you grow your business.
+            </h2>
+            <ul class="feature__list">
+              <li>Perfect for modern startups</li>
+              <li>Fully customizable and scalable</li>
+            </ul>
+          </div>
+          <div class="feature__media feature__media--photo col-12 col-lg-6">
+            <img src="assets/images/img_02.jpg" alt="Team working on laptops" />
+            <button class="project-photo__btn" type="button">
+              Play video <i class="bi bi-play" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="technology row g-4 align-items-center">
+          <div class="feature__media feature__media--stack col-12 col-lg-7">
+            <div class="stack-col stack-col--left">
+              <div class="card stack-card stack-card--profile">
+                <img src="assets/images/people/person_03.jpg" alt="Profile photo" />
+                <div class="stack-card__meta">
+                  <span class="stack-card__badge">JH</span>
+                  <span>Jimmy Hendrix</span>
+                  <i class="bi bi-heart" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <div class="card stack-card stack-card--components">
+                <div class="stack-card__summary">
+                  <div class="stack-card__check">
+                    <i class="bi bi-check-lg" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <p class="stack-card__score">300+ components</p>
+                    <p class="stack-card__sub">Built to be customized.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="stack-col stack-col--right">
+              <div class="card stack-card stack-card--rating">
+                <img class="stack-card__brand" src="assets/images/company-logos/colored/airbnb.svg" alt="Airbnb" />
+                <p class="stack-card__stars">
+                  &starf; &starf; &starf; &starf; &star;
+                </p>
+                <p class="stack-card__score">4.95 out of 5 stars</p>
+                <p class="stack-card__sub">from 23 reviews</p>
+              </div>
+
+              <div class="card stack-card stack-card--toolkit">
+                <div class="stack-card__icon-wrap">
+                  <img src="assets/images/company-logos/colored/company_01.png" alt="Website UI Kit logo" />
+                </div>
+                <p class="stack-card__score">Website UI Kit</p>
+                <div class="stack-card__avatars" aria-hidden="true">
+                  <img src="assets/images/people/person_01.jpg" alt="" />
+                  <img src="assets/images/people/person_02.jpg" alt="" />
+                  <img src="assets/images/people/person_03.jpg" alt="" />
+                </div>
+                <div class="stack-card__actions">
+                  <i class="bi bi-paperclip" aria-hidden="true"></i>
+                  <i class="bi bi-eye" aria-hidden="true"></i>
+                  <i class="bi bi-heart" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature__content--technology col-12 col-lg-5">
+            <p class="tag tag--tech">Technology</p>
+            <h2>We use the latest technologies on the market</h2>
+            <p class="feature__lead">
+              Get components and examples, including tons of variables that
+              will help you grow your business.
+            </p>
+            <a class="feature__link" href="#">See case studies</a>
+          </div>
+        </div>
+
+        <div class="install section-download-app row g-4 align-items-center">
+          <div class="feature__content--download col-12 col-lg-6">
+            <p class="tag tag--orange">Easy to install</p>
+            <h2>Download, install and run.</h2>
+            <p class="feature__lead">
+              Get components and examples, including tons of variables that
+              will help you grow your business.
+            </p>
+            <div class="store-buttons">
+              <a class="store-btn" href="#" aria-label="Download on the App Store">
+                <i class="bi bi-apple" aria-hidden="true"></i>
+                <span><small>Download on the</small><span class="store-btn__title">App Store</span></span>
+              </a>
+              <a class="store-btn" href="#" aria-label="Download on Google Play">
+                <i class="bi bi-google-play" aria-hidden="true"></i>
+                <span><small>Download on the</small><span class="store-btn__title">Play Store</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="feature__media feature__media--download col-12 col-lg-6">
+            <img src="assets/images/img_03.jpg" alt="Team looking at a laptop" />
+            <button class="project-photo__btn" type="button">
+              Play video <i class="bi bi-play" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <h3>Infinite solutions</h3>
+            <p class="cta-box__text">
+              Intuitive markup, powerful and lightning fast build tools,
+              everything you need to turn your ideas into incredible products.
+            </p>
+          </div>
+          <a class="app-btn cta-box__btn" href="#">
+            <span>Learn more</span>
+            <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-award" id="awards">
+      <div class="container">
+        <p class="awards__eyebrow">Awards</p>
+        <h2 class="awards__title">
+          Awards for design, creativity and innovation on the Internet
+        </h2>
+        <div class="awards-grid row g-4">
+          <a class="award-card card col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 col-xxl-2" href="#"
+            aria-label="Airbnb award">
+            <img src="assets/images/company-logos/colored/airbnb.svg" alt="Airbnb" />
+            <p class="award-card__stars">
+              &starf; &starf; &starf; &starf; &star;
+            </p>
+            <p class="award-card__rating">4.95 out of 5 stars</p>
+            <p class="award-card__reviews">from 23 reviews</p>
+          </a>
+          <a class="award-card card col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 col-xxl-2" href="#"
+            aria-label="Amazon award">
+            <img src="assets/images/company-logos/colored/amazon.svg" alt="Amazon" />
+            <p class="award-card__desc">
+              They build modern looking websites easily using Tabs.
+            </p>
+            <span class="award-card__more">Learn more</span>
+          </a>
+          <a class="award-card card col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 col-xxl-2" href="#"
+            aria-label="Slack award">
+            <img src="assets/images/company-logos/colored/slack.svg" alt="Slack" />
+            <p class="award-card__desc">
+              They build modern looking websites easily using Trello.
+            </p>
+            <span class="award-card__more">Learn more</span>
+          </a>
+          <a class="award-card card col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 col-xxl-2" href="#"
+            aria-label="Spotify award">
+            <img src="assets/images/company-logos/colored/spotify.svg" alt="Spotify" />
+            <p class="award-card__stars">
+              &starf; &starf; &starf; &starf; &star;
+            </p>
+            <p class="award-card__rating">4.95 out of 5 stars</p>
+            <p class="award-card__reviews">from 23 reviews</p>
+          </a>
+          <a class="award-card card col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 col-xxl-2" href="#"
+            aria-label="PayPal award">
+            <img src="assets/images/company-logos/colored/paypal.svg" alt="PayPal" />
+            <p class="award-card__desc">
+              They build modern looking websites easily using Docker.
+            </p>
+            <span class="award-card__more">Learn more</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-helpful" id="faq">
+      <div class="container">
+        <h2 class="section-title">Helpful answers</h2>
+        <p class="answers__subtitle">
+          Start building fast, beautiful and modern looking websites in no
+          time.
+        </p>
+
+        <div class="answers__grid row g-4">
+          <div class="accordion custom-accordion col-12 col-lg-6" id="helpfulAnswersLeft">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="answerOneHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#answerOne" aria-expanded="false" aria-controls="answerOne">
+                  <i class="bi bi-file-earmark-text answer-icon" aria-hidden="true"></i>
+                  <span>Which license do I need?</span>
+                </button>
+              </h3>
+              <div id="answerOne" class="accordion-collapse collapse" aria-labelledby="answerOneHeading"
+                data-bs-parent="#helpfulAnswersLeft">
+                <div class="accordion-body">
+                Text
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="answerTwoHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#answerTwo" aria-expanded="false" aria-controls="answerTwo">
+                  <i class="bi bi-lock answer-icon" aria-hidden="true"></i>
+                  <span>How do I get access to my database?</span>
+                </button>
+              </h3>
+              <div id="answerTwo" class="accordion-collapse collapse" aria-labelledby="answerTwoHeading"
+                data-bs-parent="#helpfulAnswersLeft">
+                <div class="accordion-body">
+                Text
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="answerThreeHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#answerThree" aria-expanded="false" aria-controls="answerThree">
+                  <i class="bi bi-folder2 answer-icon" aria-hidden="true"></i>
+                  <span>How do I see previous orders?</span>
+                </button>
+              </h3>
+              <div id="answerThree" class="accordion-collapse collapse" aria-labelledby="answerThreeHeading"
+                data-bs-parent="#helpfulAnswersLeft">
+                <div class="accordion-body">
+                  Text
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion custom-accordion col-12 col-lg-6" id="helpfulAnswersRight">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="answerFourHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#answerFour" aria-expanded="false" aria-controls="answerFour">
+                  <i class="bi bi-file-earmark-text answer-icon" aria-hidden="true"></i>
+                  <span>Which license do I need?</span>
+                </button>
+              </h3>
+              <div id="answerFour" class="accordion-collapse collapse" aria-labelledby="answerFourHeading"
+                data-bs-parent="#helpfulAnswersRight">
+                <div class="accordion-body">
+                  Text
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="answerFiveHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#answerFive" aria-expanded="false" aria-controls="answerFive">
+                  <i class="bi bi-lock answer-icon" aria-hidden="true"></i>
+                  <span>How do I get access to my database?</span>
+                </button>
+              </h3>
+              <div id="answerFive" class="accordion-collapse collapse" aria-labelledby="answerFiveHeading"
+                data-bs-parent="#helpfulAnswersRight">
+                <div class="accordion-body">
+                  Text
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="answerSixHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#answerSix" aria-expanded="false" aria-controls="answerSix">
+                  <i class="bi bi-folder2 answer-icon" aria-hidden="true"></i>
+                  <span>How do I see previous orders?</span>
+                </button>
+              </h3>
+              <div id="answerSix" class="accordion-collapse collapse" aria-labelledby="answerSixHeading"
+                data-bs-parent="#helpfulAnswersRight">
+                <div class="accordion-body">
+                  Text
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="answers__cta">
+          <p>I want to start a new project.</p>
+          <div class="answers__cta-actions">
+            <a class="app-btn app-btn--primary answers__buy" href="#">
+              <span>Buy now</span>
+              <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+            </a>
+            <a class="answers__learn" href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-main">
+    <div class="container footer-main__top row g-4 align-items-center">
+      <div class="footer-main__intro col-12 col-lg-7">
+        <h3>Brilliant solutions for your ideas</h3>
+        <p>Modern looking websites.</p>
+      </div>
+      <div class="footer-main__actions col-12 col-lg-5">
+        <a class="app-btn app-btn--light footer-main__doc-btn" href="#">
+          <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
+          <span>Documentation</span>
+        </a>
+        <a class="app-btn app-btn--primary footer-main__purchase-btn" href="#">Purchase now</a>
+      </div>
+    </div>
+
+    <div class="container footer-main__middle row g-4">
+      <div class="footer-main__brand-col col-12 col-lg-5">
+        <img src="assets/images/company-logos/white/odoo-white.svg" alt="Odoo" />
+        <p>
+          Odoo attempts to bring the best development experience to designers
+          and developers by offering the tools needed for having a quick and
+          solid start in most web projects.
+        </p>
+        <div class="footer-main__social">
+          <a href="#" aria-label="Website"><i class="bi bi-globe2"></i></a>
+          <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-main__links col-12 col-lg-7">
+        <div>
+          <h4>Account</h4>
+          <a href="#">Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Billing</a>
+          <a href="#">Notifications</a>
+        </div>
+        <div>
+          <h4>About</h4>
+          <a href="#">Services</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contact</a>
+          <a href="#">Careers</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#">Community</a>
+          <a href="#">Help center</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-main__bottom row g-3 align-items-center">
+      <p class="col-12 col-md mb-0">&copy; Odoo. All rights reserved</p>
+      <div class="footer-main__legal col-12 col-md-auto">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+.section-download-app {
+
+  .feature__media {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.tag--orange {
+  background-color: var(--color-warning);
+}
+
+.feature__content--download {
+  h2 {
+    max-width: 22ch;
+    margin: 12px 0 16px;
+    font-size: 1.85rem;
+    line-height: 1.15;
+  }
+  p {
+    max-width: 50ch;
+    line-height: 1.55;
+  }
+}
+
+.store-buttons {
+  margin-top: 26px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.store-btn {
+  background-color: var(--color-surface-dark);
+  border: 1px solid var(--color-border-strong);
+  color: var(--color-white);
+  border-radius: 7px;
+  text-decoration: none;
+  padding: 7px 20px;
+  min-width: 170px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: var(--shadow-download-btn);
+
+  i {
+    font-size: 1.45rem;
+  }
+
+  small {
+    display: block;
+    font-size: 0.63rem;
+    line-height: 1.1;
+    opacity: 0.82;
+  }
+
+  .store-btn__title {
+    display: block;
+    font-size: 1.28rem;
+    line-height: 1.15;
+    font-weight: 600;
+  }
+}
+
+.feature__media--download {
+  position: relative;
+  min-height: 240px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .project-photo__btn {
+    top: 16px;
+    left: 16px;
+    right: auto;
+  }
+}
+
+.install {
+  position: relative;
+  margin-bottom: 56px;
+  z-index: 1;
+
+  &:not(:last-child)::after,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 49%;
+    top: 129px;
+    border: 2px dashed var(--color-dash-ring);
+    border-radius: 50%;
+    clip-path: inset(50% 0 0 50%);
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+ 
+}
+
+@media (max-width: 1279px) {
+  .install {
+    margin-bottom: 30px;
+
+    &:not(:last-child)::after,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .install {
+    margin-bottom: 18px;
+
+    &:not(:last-child)::after,
+    &::after {
+      display: none;
+    }
+  }
+
+  .feature__content--download {
+    h2 {
+      font-size: 1.52rem;
+      line-height: 1.22;
+    }
+  }
+
+  .store-buttons {
+    margin-top: 20px;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .store-btn {
+    width: 100%;
+    min-width: 0;
+    padding: 10px 16px;
+  }
+
+  .feature__media--download {
+    min-height: 260px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .install {
+    margin-bottom: 42px;
+  }
+
+  .feature__content--download {
+    h2 {
+      font-size: 1.85rem;
+      line-height: 1.2;
+    }
+  }
+
+  .store-buttons {
+    gap: 10px;
+  }
+
+  .store-btn {
+    width: auto;
+    min-width: 150px;
+
+    .store-btn__title {
+      font-size: 1.05rem;
+    }
+  }
+
+  .feature__media--download {
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .feature__content--download {
+    h2 {
+      font-size: 1.85rem;
+      line-height: 1.15;
+    }
+  }
+
+  .store-buttons {
+    gap: 25px;
+  }
+
+  .store-btn {
+    min-width: 170px;
+    padding: 7px 20px;
+
+    i {
+      font-size: 1.45rem;
+    }
+
+    .store-btn__title {
+      font-size: 1.28rem;
+    }
+  }
+
+  .feature__media--download {
+    min-height: 420px;
+  }
+}

@@ -1,0 +1,130 @@
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border-bottom: 1px solid var(--color-white-22);
+  padding-bottom: 12px;
+}
+
+.top-nav__menu {
+  gap: 25px;
+  margin-inline: auto;
+
+  .nav-link {
+    color: var(--color-white-92);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 14px;
+
+    &:hover,
+    &:focus {
+      color: var(--color-white);
+    }
+  }
+}
+
+.top-nav__actions {
+  margin-left: 14px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.top-nav__signin {
+  color: var(--color-white-94);
+  text-decoration: none;
+  font-size: 16px;
+
+  &:hover {
+    color: var(--color-white);
+  }
+}
+
+.top-nav__buy {
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  gap: 8px;
+  color: var(--color-ink-button);
+  border: 1px solid var(--color-border-nav);
+  text-decoration: none;
+
+  i {
+    font-size: 13px;
+  }
+}
+
+.top-nav__toggle {
+  border-color: var(--color-white-35);
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem var(--color-white-20);
+  }
+}
+
+.top-nav {
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.95%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+}
+
+@media (max-width: 1023px) {
+  .top-nav {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .top-nav__collapse {
+    margin-top: 12px;
+    background-color: var(--color-nav-panel-bg);
+    border: 1px solid var(--color-white-24);
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: var(--shadow-nav-panel);
+    backdrop-filter: blur(6px);
+  }
+
+  .top-nav__menu {
+    gap: 6px;
+    width: 100%;
+    margin-inline: 0;
+
+    .nav-item {
+      width: 100%;
+    }
+
+    .nav-link {
+      display: block;
+      width: 100%;
+      border-radius: 10px;
+      padding: 11px 12px;
+
+      &:hover,
+      &:focus {
+        background-color: var(--color-white-12);
+      }
+    }
+  }
+
+  .top-nav__actions {
+    margin: 8px 0 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .top-nav__signin {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 12px;
+    background-color: var(--color-white-08);
+    text-align: center;
+  }
+
+  .top-nav__buy {
+    margin-top: 0;
+    width: 100%;
+    justify-content: center;
+  }
+}
